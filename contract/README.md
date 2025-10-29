@@ -48,7 +48,7 @@ Transaction Reference
 
 A quick reference to the related transaction on the Celo Sepolia Blockscout explorer:
 
-Transaction (Blockscout): 0x89ec478028e1e5b51574920403b2ace368f3b369b6632e5dd4982b6c1b005c3a
+Transaction (Blockscout): https://celo-sepolia.blockscout.com/tx/0x89ec478028e1e5b51574920403b2ace368f3b369b6632e5dd4982b6c1b005c3a
 
 You can paste the above link directly into your repository's README to let others open the transaction in Blockscout.
 
