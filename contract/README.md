@@ -1,70 +1,54 @@
 # 🧠 On-Chain Quiz System (![WhatsApp Image 2025-10-29 at 14 35 30_43d7fda2](https://github.com/user-attachments/assets/277a06be-aaf2-418a-a4fc-a7314c1b870c)
 Solidity Project)
 
-Welcome to the **On-Chain Quiz System** — a simple Solidity smart contract project that brings quiz logic directly **on the blockchain**!  
-This project is designed for beginners who want to learn how to build decentralized applications (DApps) and understand how smart contracts store and verify data on-chain.  
+# ⚡ Smart Contract Deployment on Celo Sepolia
+
+A successful *smart contract deployment* verified on the *Celo Sepolia Testnet* blockchain.
 
 ---
 
-## 📘 Project Description
+## 🌐 Transaction Details
 
-This project demonstrates how to create and interact with an **on-chain quiz** where:
-- The **quiz owner** can add verified questions and answers.
-- **Players** can submit their answers directly through the blockchain.
-- The contract automatically checks if the submitted answer is correct and stores the result permanently on-chain.
-
-The idea is simple but powerful — turning traditional quizzes into **transparent, immutable, and fair** on-chain systems.
-
----
-
-## ⚙️ What It Does
-
-- The **owner** (deployer) adds new questions and verified answers.
-- Users **submit answers** via a transaction.
-- The contract checks if the answer matches the correct one and **stores the result**.
-- Anyone can **view** whether a player’s answer was correct or not using the public functions.
+* *Network:* Celo Sepolia Testnet
+* *Transaction Hash:* [0x89ec478028e1e5b51574920403b2ace368f3b369b6632e5dd4982b6c1b005c3a](https://celo-sepolia.blockscout.com/tx/0x89ec478028e1e5b51574920403b2ace368f3b369b6632e5dd4982b6c1b005c3a)
+* *Status:* ✅ Success
+* *Block Number:* 8,442,005
+* *Timestamp:* Oct 29, 2025 – 13:49:53 (UTC+05:30)
+* *Confirmed within:* ≤ 1 second
+* *Deployed By:* 0xb6...1a82
 
 ---
 
-## ✨ Features
+## 📷 Deployment Screenshot
 
-✅ Add questions (only owner access)  
-✅ Submit answers directly on-chain  
-✅ Automatic answer verification  
-✅ Stores who answered correctly  
-✅ Beginner-friendly and well-commented Solidity code  
-✅ Perfect for learning smart contract development  
+Below is the verification snapshot of the deployment from *Celo Blockscout Explorer:*
+(Add this image in your repository)
+WhatsApp Image 2025-10-30 at 00.35.58.jpeg
 
 ---
 
-## 🧩 Smart Contract Code
+## 🧠 Summary
 
-```solidity
-🚀 Deployed Smart Contract
+This deployment represents a *testnet transaction* for educational and blockchain experimentation purposes.
+It showcases:
 
-Try it out directly on Remix IDE:
+* *Successful smart contract creation*
+* *Transaction transparency via Blockscout*
+* *Celo Sepolia network validation*
 
-Transaction Reference
+---
 
-A quick reference to the related transaction on the Celo Sepolia Blockscout explorer:
+## 🚀 Tools & Environment
 
-Transaction (Blockscout): https://celo-sepolia.blockscout.com/tx/0x89ec478028e1e5b51574920403b2ace368f3b369b6632e5dd4982b6c1b005c3a
+* *IDE:* Remix Ethereum
+* *Wallet:* MetaMask
+* *Blockchain:* Celo Sepolia Testnet
+* *Explorer:* [Celo Blockscout](https://celo-sepolia.blockscout.com/)
 
-You can paste the above link directly into your repository's README to let others open the transaction in Blockscout.
+---
 
-Want to take this project further?
-Here are a few cool ideas you can try:
+### 👨‍💻 Author
 
-🔒 Hide correct answers using hashing (to prevent cheating)
+*Ankit Patel*
+🎓 AI & ML Student | Narula Institute of Technology
 
-🪙 Add reward tokens for correct answers
-
-🏆 Build a leaderboard system
-
-🌐 Connect with a frontend using Web3.js or Ethers.js
-
-👨‍💻 Author
-
-Name: ANKIT PATEL
-Idea: On-chain verified quiz system built with Solidity
-Tech Stack: Solidity, Remix IDE, Ethereum Virtual Machine (EVM)
