@@ -1,4 +1,5 @@
-# 🧠 On-Chain Quiz System (Solidity Project)
+# 🧠 On-Chain Quiz System (![WhatsApp Image 2025-10-29 at 14 35 30_43d7fda2](https://github.com/user-attachments/assets/277a06be-aaf2-418a-a4fc-a7314c1b870c)
+Solidity Project)
 
 Welcome to the **On-Chain Quiz System** — a simple Solidity smart contract project that brings quiz logic directly **on the blockchain**!  
 This project is designed for beginners who want to learn how to build decentralized applications (DApps) and understand how smart contracts store and verify data on-chain.  
