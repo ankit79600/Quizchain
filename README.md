@@ -43,7 +43,7 @@ The idea is simple but powerful — turning traditional quizzes into **transpare
 🚀 Deployed Smart Contract
 
 Try it out directly on Remix IDE:
-👉 Remix Deployment Link
+👉 Remix Deployment Link https://remix.ethereum.org/#lang=en&optimize=false&runs=200&evmVersion=null
 
 🧠 Next Steps (Optional Ideas)
 
