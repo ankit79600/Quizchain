@@ -1,42 +1,61 @@
-# 🧠 On-Chain Quiz System (Solidity Project)
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
 
-Welcome to the **On-Chain Quiz System** — a simple Solidity smart contract project that brings quiz logic directly **on the blockchain**!  
-This project is designed for beginners who want to learn how to build decentralized applications (DApps) and understand how smart contracts store and verify data on-chain.  
+contract OnChainQuiz {
+    address public owner;
+    uint256 public questionCount;
 
----
+    struct Question {
+        string questionText;
+        string correctAnswer;
+        bool exists;
+    }
 
-## 📘 Project Description
+    struct PlayerAnswer {
+        bool answered;
+        bool isCorrect;
+    }
 
-This project demonstrates how to create and interact with an **on-chain quiz** where:
-- The **quiz owner** can add verified questions and answers.
-- **Players** can submit their answers directly through the blockchain.
-- The contract automatically checks if the submitted answer is correct and stores the result permanently on-chain.
+    mapping(uint256 => Question) public questions;
+    mapping(address => mapping(uint256 => PlayerAnswer)) public playerAnswers;
 
-The idea is simple but powerful — turning traditional quizzes into **transparent, immutable, and fair** on-chain systems.
+    event QuestionAdded(uint256 questionId, string questionText);
+    event AnswerSubmitted(address player, uint256 questionId, bool isCorrect);
 
----
+    modifier onlyOwner() {
+        require(msg.sender == owner, "Only owner can do this");
+        _;
+    }
 
-## ⚙️ What It Does
+    constructor() {
+        owner = msg.sender;
+    }
 
-- The **owner** (deployer) adds new questions and verified answers.
-- Users **submit answers** via a transaction.
-- The contract checks if the answer matches the correct one and **stores the result**.
-- Anyone can **view** whether a player’s answer was correct or not using the public functions.
+    // Add a question with a verified answer
+    function addQuestion(string memory _questionText, string memory _correctAnswer)
+        public
+        onlyOwner
+    {
+        questionCount++;
+        questions[questionCount] = Question(_questionText, _correctAnswer, true);
+        emit QuestionAdded(questionCount, _questionText);
+    }
 
----
+    // Users can submit answers
+    function submitAnswer(uint256 _questionId, string memory _answer) public {
+        require(questions[_questionId].exists, "Question does not exist");
+        require(!playerAnswers[msg.sender][_questionId].answered, "Already answered");
 
-## ✨ Features
+        bool correct = keccak256(abi.encodePacked(_answer)) ==
+                       keccak256(abi.encodePacked(questions[_questionId].correctAnswer));
 
-✅ Add questions (only owner access)  
-✅ Submit answers directly on-chain  
-✅ Automatic answer verification  
-✅ Stores who answered correctly  
-✅ Beginner-friendly and well-commented Solidity code  
-✅ Perfect for learning smart contract development  
+        playerAnswers[msg.sender][_questionId] = PlayerAnswer(true, correct);
 
----
+        emit AnswerSubmitted(msg.sender, _questionId, correct);
+    }
 
-## 🧩 Smart Contract Code
-
-```solidity
-//paste your code
+    // Check if user answered correctly
+    function checkAnswer(address _player, uint256 _questionId) public view returns (bool) {
+        return playerAnswers[_player][_questionId].isCorrect;
+    }
+}
