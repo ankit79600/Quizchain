@@ -16,15 +16,6 @@ A successful *smart contract deployment* verified on the *Celo Sepolia Testnet* 
 * *Timestamp:* Oct 29, 2025 – 13:49:53 (UTC+05:30)
 * *Confirmed within:* ≤ 1 second
 * *Deployed By:* 0xb6...1a82
-
----
-
-## 📷 Deployment Screenshot
-
-Below is the verification snapshot of the deployment from *Celo Blockscout Explorer:*
-(Add this image in your repository)
-WhatsApp Image 2025-10-30 at 00.35.58.jpeg
-
 ---
 
 ## 🧠 Summary
