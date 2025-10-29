@@ -43,7 +43,8 @@ The idea is simple but powerful — turning traditional quizzes into **transpare
 🚀 Deployed Smart Contract
 
 Try it out directly on Remix IDE:
-👉 Remix Deployment Link 0x4ed81017e9ae37abff6d83a059a60f3331fb21aa
+contract link --> https://celo-sepolia.blockscout.com/address/0x4ED81017e9Ae37aBFf6d83a059a60f3331fb21Aa
+Transaction Link --> https://celo-sepolia.blockscout.com/tx/0x89ec478028e1e5b51574920403b2ace368f3b369b6632e5dd4982b6c1b005c3a
 
 🧠 Next Steps (Optional Ideas)
 
