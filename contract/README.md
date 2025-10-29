@@ -44,8 +44,7 @@ The idea is simple but powerful — turning traditional quizzes into **transpare
 
 Try it out directly on Remix IDE:
 
-**Transaction Link**   https://celo-sepolia.blockscout.com/tx/0x89ec478028e1e5b51574920403b2ace368f3b369b6632e5dd4982b6c1b005c3a
-🧠 Next Steps (Optional Ideas)
+Transaction Link: https://celo-sepolia.blockscout.com/tx/0x89ec478028e1e5b51574920403b2ace368f3b369b6632e5dd4982b6c1b005c3a
 
 Want to take this project further?
 Here are a few cool ideas you can try:
